@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10rem;
+}
+
+.header{
+
+    height: 7rem;
+    width: 100%;
+
+    color:white;
+    background-color: #202020;
+    box-shadow: 0 0 3px #666666;
+    
+    padding: 0 2rem;
+
+    position: fixed;
+    top:0;
+
+    
+
+    display: flex;
+    align-items: center;
+
+}
+
+.header-banner-logo{
+    height: 40%; 
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .coming-soon-image{
+    height: 45rem;
+    width: auto;
+    margin-bottom: 2rem;
+  }
+  
+  .coming-soon-slogan{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+
+  }
+  
+  .blue-text{
+    color: #00bcd4;
+  }
+  
+  .coming-soon-message{
+    font-size: 2rem;
+    color: #555555;
+    font-weight: 400;
+  }
+  
+  .input-form{
+      display: flex;
+      align-items: center;
+      margin-top: 3rem;
+  }
+
+  .input-form h3{
+      font-weight: 600;
+  }
+
+  .input-email{
+
+    padding: 1rem 0 1rem 1rem;
+    font-size: 2rem;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid #00bcd4;
+    color: #00bcd4;
+  }
+
+  .input-submit{
+      border: none;
+      padding: 1rem 1.7rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background-color: #00bcd4;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+
+      font-weight: bold;
+      font-size: 2rem;
+      border-radius: 50%;
+
+      margin-left: 1rem;
+      cursor: pointer;
+
+  }
+
+  footer{
+        height: 6rem;
+        background-color: #e3e3e3;
+        color: #666666;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        font-size: 1.6rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+
+  @media screen and (max-width: 37.5rem) {
+    
+    .coming-soon-image{
+        height: 25rem;
+      }
+
+      html{
+        font-size: 50%;
+    
+    }
+
+    body{
+        margin-top: 20rem;
+    }
+
+    .input-form{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .input-form > *{
+        margin-bottom: 1rem;
+    }
+
+    .input-submit{
+        margin-top: 1rem;
+    }
+
+  }
