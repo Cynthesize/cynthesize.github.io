@@ -42,4 +42,20 @@
         </div>
     </main>
 </body>
+    <script src="js/airtable.browser.js"></script>
+    <script>
+    var Airtable = require('airtable');
+    var base = new Airtable({apiKey: 'keyHpbXYGXQ6zuboP'}).base('appIfQfVEdPyChC0j');
+    $("#submit").click(function(e){
+        e.preventDefault();
+        var email=document.getElementById("email").value;
+        base('apply').create({
+            "Email" : email
+        }, function(err, record) {
+        if (err) { console.error(err); return; }
+            document.getElementById("email").value="";
+        });
+
+});
+    </script>
 </html>
